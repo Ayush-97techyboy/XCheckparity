@@ -1,18 +1,23 @@
-# React + Vite
+# XCheckParity - Even or Odd Checker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+XCheckParity is a minimal, responsive web application built with React and Vite. It allows users to input any number and quickly determine its parity (whether it is an Even or Odd number) with a single click.
 
-Currently, two official plugins are available:
+## Features
+- **Dynamic Feedback:** Instant parsing and feedback indicating if a number is "even", "odd", or "invalid".
+- **Responsive Layout:** Includes an elegant card design centered on screen, adapting smoothly to full screen formats across devices.
+- **Accessibility Friendly:** Built with keyboard focus states and screen-reader supported attributes on inputs.
+- **Error Handling:** Recognizes incorrect formatting such as alphabetical strings and gracefully alerts the user with proper warnings.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- Frontend Framework: React (via Vite)
+- UI / Styling: Vanilla CSS
 
-## React Compiler
+## Setup Instructions
+1. Navigate to the project directory.
+2. Run `npm install` to install dependencies.
+3. Run `npm run dev` to start the local development server.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Code Structure Highlights
+- `/src/App.jsx` contains the core application state logic and view templating. Reusable parity checks execute locally on input strings.
+- `/src/App.css` and `/src/index.css` outline project theming, global alignments, and isolated card layouts for modern rendering.
