@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
 
-  const [number, setNumber] = useState();
+  const [number, setNumber] = useState('');
   const [parity, setParity] = useState('');
 
   // Determine and set the parity state when the check button is clicked
@@ -29,7 +29,7 @@ function App() {
 
         {parity === 'even' && <p className='result' id='result'>The number {number} is {parity}!</p>}
         {parity === 'odd' && <p className='result' id='result'>Oops, {number} is {parity}!</p>}
-        {parity === 'invalid' && <p className='result' id='result'>Not a Valid number!</p>}
+        {parity === 'invalid' && <p className='result' id='result'>Not a valid number!</p>}
       </section>
       </div>
     </>
